@@ -1,0 +1,16 @@
+<h1>There are {{count}} words in your text</h1>
+
+<h1>Your Text is :</h1>
+<br/>
+{{fulltext}}
+
+<h1>List of words with occurences</h1>
+{{word_dic}}
+<br/>
+{% for word,word_count in word_dic %}
+<br/>
+{{word}}
+<br/>
+{{word_count}}
+
+{% endfor %}
